@@ -22,9 +22,6 @@ body {
         background-position: 350% 50%, 350% 50%;
     }
 }
-*{
-  transition: 200ms ease;
-}
 
 .jumbo {
     --stripes: repeating-linear-gradient(
@@ -146,7 +143,7 @@ body {
     background-color:rgb(37, 37, 37);
     color:#ffffff;
     display:flex;
-    border-radius:12px;
+    border-radius:32px;
     justify-content: center;
     gap: 8px;
     padding-inline:0.75rem;
