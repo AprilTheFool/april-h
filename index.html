@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Tailwind.css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>April Hombsch - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <style>
+      /* -- priority positioning for 3d element -- */
+      .cube {
+        position: fixed !important;
+        left: 50vw !important;
+      }
+
+      @media (max-width: 500px) {
+        .cube {
+          left: -30vw !important;
+        }
+      }
+    </style>
+    <main class="main">
+      <div class="loader" id="loader">
+        <div class="loader-content">
+          <img class="loader-logo" src="./assets/ukyo-black.svg">
+          <span class="loading loading-dots loading-lg"></span>
+        </div>
+      </div>
+      <div class="relative flex flex-col h-[100vh] items-center justify-center bg-white dark:bg-black transition-bg">
+        <div class="absolute inset-0 overflow-hidden">
+          <div class="jumbo absolute -inset-[10px] opacity-50"></div>
+        </div>
+        <div class="mobile-overlay"></div>
+        <div class="cube">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
+          <spline-viewer url="https://prod.spline.design/EWYZpPuK8DpkV7SH/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="content">
+          <div class="content-title">
+            April Hombsch
+            <div class="content-title-span">
+              <img class="content-title-img" src="./assets/ukyo-black.svg" />
+            </div>
+          </div>
+          <div class="content-subtitle-wrap">
+            <div class="inline-block h-[20px] min-h-[1em] w-1 self-stretch bg-neutral-100 opacity-100 dark:opacity-50 rounded-full"></div>
+            <p class="content-subtitle">Fontend Web Developer</p>
+          </div>
+          <div class="content-lang-wrap">
+            <p class="content-lang-item"><img class="content-lang-item-icon" src="./assets/html.svg" />HTML</p>
+            <p class="content-lang-item"><img class="content-lang-item-icon" src="./assets/css.svg" />CSS</p>
+            <p class="content-lang-item"><img class="content-lang-item-icon" src="./assets/js.svg" />JS</p>
+            <br />
+            <p class="content-lang-item"><img class="content-lang-item-icon" src="./assets/tailwind.svg" />Tailwind</p>
+            <p class="content-lang-item"><img class="content-lang-item-icon" src="./assets/react.svg" />React</p>
+          </div>
+          <div class="content-work-wrap">
+            <div class="content-socials">
+              <a target="_blank" href="https://www.behance.net/aprilukyo" class="content-socials-item"><img class="content-socials-icon" src="./assets/behance.svg" /></a>
+              <a target="_blank" href="https://github.com/AprilTheFool" class="content-socials-item"><img class="content-socials-icon" src="./assets/github.svg" /></a>
+              <a target="_blank" href="https://codepen.io/AprilTheFool" class="content-socials-item"><img class="content-socials-icon" src="./assets/codepen.svg" /></a>
+            </div>
+            <img class="content-work-hr" src="./assets/hr.svg" />
+            <a class="content-work" target="_blank" href="https://www.behance.net/aprilukyo">
+              <p class="content-work-p">Work</p>
+              <img class="content-work-icon" src="./assets/out.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="footer-text">2024 - April Hombsch - ukyo</p>
+      </div>
+    </main>
+    <script src="./loader.js"></script>
+  </body>
+</html>
