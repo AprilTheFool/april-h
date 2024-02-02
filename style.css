@@ -172,9 +172,9 @@ body {
 
   .content-work-wrap{
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr;
     align-items: center;
-    width: 20rem;
+    width: 21.5rem;
     margin-top: 1.25rem;
     margin-left:0.5rem;
   }
@@ -194,7 +194,7 @@ body {
   .content-work-hr{
     filter: invert(100%);
     width:1.5rem;
-    margin-inline:auto;
+    margin-left: 0.35rem;
     position:relative;
     bottom:8px;
     opacity:30%;
